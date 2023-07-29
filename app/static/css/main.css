@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+.content{
+    width: 50%; /* Adjust the width to your desired value */
+    margin: 0 auto;    
+    text-align: center;
+}
+
+/* Style for the entire table */
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the table headers */
+  .styled-table th {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Style for alternating table rows */
+  .styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for table cells */
+  .styled-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Hover style for table rows */
+  .styled-table tr:hover {
+    background-color: #e5e5e5;
+  }
+  
+  /* Style for the entire form */
+.styled-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for form labels */
+  .styled-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style for form inputs and textarea */
+  .styled-form input[type="text"],
+  .styled-form input[type="email"],
+  .styled-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Style for the submit button */
+  .styled-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Hover style for the submit button */
+  .styled-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for the entire form */
+input[type="datetime-local"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}

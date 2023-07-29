@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="content">
+    <h1>Update Task</h1>
+   
+    <form action="/api/update/{{task.id}}" method="post" class="styled-form">
+        <label for="content"> Task</label>
+        <input type="text" name="content" id="content" value="{{ task.content}}">
+        <label for="start_date_time"> Start Date-Time</label>
+        <input type="datetime-local" name="start_date_time" id="start_date_time" value="{{ task.start_date_time}}">
+        <label for="end_date_time"> End Date-Time</label>
+        <input type="datetime-local" name="end_date_time" id="end_date_time" value="{{ task.end_date_time}}">
+        <label for="content"> completed</label>
+        <input type="text" name="completed" id="completed" value="{{ task.completed}}">
+        <input type="submit" value="Update task">
+    </form>
+</div>
+
+{% endblock body %}

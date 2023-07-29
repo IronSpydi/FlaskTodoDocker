@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="content">
+    <h1>Task Manager</h1>
+    <table class="styled-table">
+        <tr>
+            <th>Task</th>
+            <th>Added</th>
+            <th>Start date time</th>
+            <th>end date time</th>
+            <th> Progress</th>
+            <th>Action</th>
+        </tr>
+        {% for task in tasks %}
+            <tr>
+                <td>{{ task.content}}</td>
+                <td>{{ task.date_created.date() }}</td>
+                <td>{{ task.start_date_time }}</td>
+                <td>{{ task.end_date_time }}</td>
+                <td>{{ task.completed }}</td>
+                <td>
+                    <a href="/completed/{{task.id}}">Complete</a>
+                    <br>
+                    <a href="/delete/{{task.id}}">Delete</a>
+                    <br>
+                    <a href="/update/{{task.id}}">Update</a>
+                </td>
+            </tr>
+        {% endfor %}    
+    </table>
+    <form action="/api" method="post" class="styled-form">
+        <label for="content"> Task</label>
+        <input type="text" name="content" id="content">
+        <label for="start_date_time"> Start Date-Time</label>
+        <input type="datetime-local" name="start_date_time" id="start_date_time">
+        <label for="end_date_time"> End Date-Time</label>
+        <input type="datetime-local" name="end_date_time" id="end_date_time">
+        <label for="completed"> Complete</label>
+        <input type="text" name="completed" id="completed">
+        <input type="submit" value="Add task">
+    </form>
+</div>
+
+{% endblock body %}

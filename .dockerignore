@@ -1,0 +1,13 @@
+# General
+.git
+.gitignore
+.dockerignore
+README.md
+
+# Flask specific
+instance/
+*.pyc
+
+# Dependency directories
+venv/
+env/

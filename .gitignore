@@ -1,0 +1,22 @@
+# General
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Flask specific
+*.env
+instance/
+*.pyc
+
+# Editor/IDE specific
+.vscode/
+.idea/
+
+# Dependency directories
+venv/
+env/
+env.bak/
+env/
+env/
